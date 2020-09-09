@@ -16,8 +16,6 @@ def phone_letter(digits):
         '9': 'wxyz'
     }
     res = []
-    if len(digits) == 0:
-        return []
     if len(digits) == 1:
         return [keyboard[digits]]
     restult = phone_letter(digits[1:])
